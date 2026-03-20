@@ -1,0 +1,29 @@
+Mechanical Design:
+Pololu Romi chassis base
+Differential drive (2 wheels + caster)
+
+Drive System:
+2× DC gearmotors with encoders
+Direct wheel mounting
+Independent left/right control
+
+Sensor Placement:
+QTR-HD-07A line sensor at front
+Sensor height ~ a few mm above ground(around 5)
+BNO055 IMU near center of chassis
+Bump sensor mounted at front
+
+Mounting:
+Standoffs and screws for components
+Zip Ties for adjustable sensor mounting (height tuning)
+Secure enough mounting to reduce vibration
+
+Stability:
+Low center of gravity
+Weight concentrated over drive wheels
+
+Design Considerations:
+Minimize vibration and mechanical play
+Compact layout
+Easy access to components
+Simple and modular design

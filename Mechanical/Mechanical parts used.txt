@@ -1,0 +1,35 @@
+Mechanical parts used:
+
+Base:
+Romi chassis base plate
+Front caster (ball wheel)
+Mounting brackets / standoffs
+Screws, nuts, spacers (hardware kit)
+
+Microcontroller/Development board:
+STM32 NUCLEO-L476RG
+
+Drive System:
+2× DC gearmotors (with integrated encoders)
+2× wheels (Romi wheels)
+Motor mounting brackets (if separate)
+
+
+Bump Sensor:
+Button Sensor bump switch
+
+Fasteners:
+M2/M3 screws
+Nuts and washers
+Standoffs (metal)
+Spacers (for IMU and Nucleo height adjustment)
+Zip Ties
+Twist Ties
+Rubber band
+
+Array Sensor:
+Pololu QTR-HD-07A Reflectance Sensor Array
+
+IMU:
+Bosch BNO055 IMU
+
