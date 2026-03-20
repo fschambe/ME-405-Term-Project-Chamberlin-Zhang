@@ -1,0 +1,44 @@
+ELectrical Design:
+
+Microcontroller:
+NUCLEO-L476RG
+Shoe of Brian for pin access and wiring organization
+Central hub for all sensor input and motor control
+
+Motor Control System:
+2× DC motors independently controlled
+PWM signals for motor effort
+Direction and enable pins for each motor
+Separate control of left/right wheels for differential steering
+
+Encoders:
+Quadrature encoders on each motor
+Left and right encoder channels routed to dedicated pins
+Used for measuring wheel speed and position
+Enables closed-loop control
+
+Sensor Integration:
+QTR-HD-07A line sensor connected via CTRL pins
+Provides real-time line position feedback
+Digital bump sensor connected to input pin (PC8)
+Used for collision detection / user input
+
+IMU (Inertial Measurement Unit):
+BNO055 IMU connected via I²C (SCL, SDA)
+Powered using 3.3V and GND
+Provides orientation and motion data
+Positioned near center for stable readings
+
+Power Distribution:
+Power supplied through NUCLEO board
+3.3V used for IMU and logic
+5V used for bump sensor
+Shared ground across all components
+
+Wiring Layout:
+Organized using Shoe of Brian headers
+Short, direct wiring paths to reduce noise
+Clear separation between:
+	Motor control
+	Sensor signals
+	Power lines
