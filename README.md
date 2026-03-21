@@ -55,7 +55,7 @@ Wiring Layout
 ## Wiring Diagram
 See Below for wiring Dirgrams
 <img width="2000" height="1300" alt="romi_final_wiring_diagram" src="https://github.com/user-attachments/assets/c9755791-b81e-45a8-8f98-fb7529009119" />
-[Electrical_Romi Cables.pdf](https://github.com/user-attachments/files/26152373/Electrical_Romi.Cables.pdf)
+![Electrical_Romi Cables](https://github.com/user-attachments/assets/2ea0e3ee-32bb-429b-863b-e46c3c7cc3da)
 
 ## Task Diagram
 <img width="2000" height="1200" alt="task diagram" src="https://github.com/user-attachments/assets/8a9f50b0-ee7e-4203-a6dc-50dc5facbfba" />
