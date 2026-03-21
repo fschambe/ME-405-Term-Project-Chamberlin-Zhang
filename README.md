@@ -78,7 +78,9 @@ See Below for wiring dirgrams
 <img width="2050" height="1300" alt="fsm_user" src="https://github.com/user-attachments/assets/e5eefbd3-c1e1-41cd-9bbf-de83d45badc2" />
 
 ## Software Design
-add any nuances our code has or you can say "refer to scripts README" or something
+All files flashed into the ROMI are found in the "PYBFLASH" directory. Please see the "README" in the directory to understand how to run the program and what each files do. For previous mains or scripts ran for earlier parts of the project, please refer to the "Scripts Used" directory.
+The final project is built off of object oriented programming, where each sensors are their own objects, having a driver file to initiate all aspects and methods of the sensor objects.
+The software itself follows a cooperative multitasking system, where each part of the program is divided into small tasks, allowing each task to have a chance to run. Tasks are portions of the code that runs asynchronously yet concurrently with other tasks, and for each task yields a certain state. A task can only be under a specific state at anytime, and a change in state typically is caused by a condition caused by the overall system. The diagrams for each tasks are listed above. For each task, there are circular states, followed by a transition condition, noting down what causes a given state to change. For more about the design of each task, please refer to the README in the PYBFLASH directory.
 ## Results
 ### Demo Video
 Below is the link to our results video. It begins with three successful test runs from the night before the presentation and ends with the three DNF runs from presentation day. 
