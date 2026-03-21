@@ -1,0 +1,3 @@
+These other two files were also imperative to the development of the final product.
+firmware.bin is a file that was to be flashed onto the connection with the STM32, which would allow the nucleo to interpret micropython, the programming language that controlled the entire system.
+observer_design.mlx is a MATLAB notebook file, that follows through with the observer design. The current parameters are the values used for our specific nucleo. Changes can be easily made by adjusting the parameters for your given design (but make sure to run all the code).
