@@ -11,20 +11,23 @@ For a serial prompt:
 
 For online docs please visit http://docs.micropython.org/
 
-Driver Layer:
+Driver Layer (Low level):
  Motor - for PWM and motor direction control
  Encoder - for wheel position and velocity
  line_sensor - for QTR line sensing
  imu_driver - for yaw-rate measuremnets from the BNO055
 
-Task-based control layer:
+Task-based control layer (middle level):
  task_motor - inner loop wheel speed control. Reads encoder velocity, compares it to desire setpoint, and computes motor effort using PI control. Also allows steering corrections to left and right setpoints differently.
  task_line_follow - outerloop line following. Reads line sensor centroid, converted line position error into steering command.
  task_state_estimation - Combines encoder and IMU measurements to estimate important states such as displacement and heading.
  task_user - Handles user interface and interaction, using input commands to allow the robot to start, test, and monitored.
  task_course - Controls the high level command for running throuhout the tasks. Adjustments to distance and angle parameters can be easily modified be changing the attributes found in the init state of the file. This is necessary, as measured distances can change depending on how reliable each component are, like the state estimation and power from the battery.
 
-main contains all the queues and shares, as well as instantiate the drivers, import calibrations, build task objects, set up defaults, and most importantly, establish the scheduler.
+High Level:
+main contains all the queues and shares, as well as instantiate the drivers, import calibrations, build task objects, set up defaults, and most importantly, runs the scheduler in perpetuity.
+cotask - implements the scheduler
+taskshare - implements shares and queues, variables that help tasks communicate with each other
 
 How to use:
 Upon start up, the user is prompted with the UI, displaying the commands that the user must follow. Any input not showned within the UI will re-prompt with all the commands. The user must not move the robot for a few seconds, as the gyro bias must be initiated, requiring the robot to be still. Only when the display "Gyro Bias set", may the user move the robot. The common flow is as followed:
