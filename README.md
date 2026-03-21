@@ -77,6 +77,8 @@ See Below for wiring Dirgrams
 ### User Task
 <img width="2050" height="1300" alt="fsm_user" src="https://github.com/user-attachments/assets/e5eefbd3-c1e1-41cd-9bbf-de83d45badc2" />
 
+## Software Design
+add any nuances our code has or you can say "refer to scripts README" or something
 ## Results
 ### Demo Video
 Below is the link to our results video. It begins with three successful test runs from the night before the presentation and ends with the three DNF runs from presentation day. 
