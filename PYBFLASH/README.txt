@@ -10,3 +10,15 @@ For a serial prompt:
  - Linux: use the command: screen /dev/ttyACM0
 
 For online docs please visit http://docs.micropython.org/
+
+Driver Layer:
+ Motor - for PWM and motor direction control
+ Encoder - for wheel position and velocity
+ line_sensor - for QTR line sensing
+ imu_driver - for yaw-rate measuremnets from the BNO055
+Task-based control layer:
+ task_motor - inner loop wheel speed control. Reads encoder velocity, compares it to desire setpoint, and computes motor effort using PI control. Also allows steering corrections to left and right setpoints differently.
+ task_line_follow - outerloop line following. Reads line sensor centroid, converted line position error into steering command.
+ task_state_estimation - Combines encoder and IMU measurements to estimate important states such as displacement and heading.
+ task_user - Handles user interface and interaction, using input commands to allow the robot to start, test, and monitored.
+ task_course - Controls the high level command for running throuhout the tasks. Adjustments to distance and angle parameters can be easily modified be changing the attributes found in the init state of the file. This is necessary, as measured distances can change depending on how reliable each component are, like the state estimation and power from the battery.
