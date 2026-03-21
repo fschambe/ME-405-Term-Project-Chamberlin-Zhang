@@ -8,7 +8,7 @@ The robot uses a reflectance sensor array for line detection, encoders for wheel
 The goal of the project was to achieve reliable and repeatable performance while maintaining a simple and modular design.
 
 ## Mechanical Design
- ### See Mechanical section for Information on:
+ ### See "Mechanical" folder for information on:
 Drive System
 
 Sensor Placement
@@ -34,7 +34,7 @@ Array Sensor
 IMU
 
 ## Electrical Design
-### See Electrical section for information on:
+### See "Electrical" folder for information on:
 Microcontroller
 
 Motor Control System
@@ -48,12 +48,12 @@ Power Distribution
 Wiring Layout
 
 ## Hardware Overview 
-### For more information on hardware, refer to the Mechanical section
+### For more information on hardware, refer to the "Mechanical" folder
 <img width="830" height="623" alt="Romi_FrontView_Labels" src="https://github.com/user-attachments/assets/3c06af01-4d21-4298-aabf-135a6bf4c737" />
 
 
 ## Wiring Diagram
-See Below for wiring Dirgrams
+See Below for wiring dirgrams
 <img width="2000" height="1300" alt="romi_final_wiring_diagram" src="https://github.com/user-attachments/assets/c9755791-b81e-45a8-8f98-fb7529009119" />
 ![Electrical_Romi Cables](https://github.com/user-attachments/assets/2ea0e3ee-32bb-429b-863b-e46c3c7cc3da)
 
